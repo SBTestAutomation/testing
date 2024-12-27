@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:MessageDrivenService" id="33774494-9c5e-470e-ad99-ef1bace5545e" name="readyAPI-import-test" type="messagedrivenservice" definitionVersion="1.0.0" definitionUrl="file:/C:/Users/sachin.hm/Downloads/readyApi-import-test.yaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+    <con:description id="a7dbec8e-16c4-47a5-aeb3-46d853c844ec">Example spec to test import into ReadyAPI</con:description>
+    <con:settings id="e444e669-69db-421a-9932-1794067e5413">
+      <con:setting id="33774494-9c5e-470e-ad99-ef1bace5545efileName">readyAPI-import-test</con:setting>
+    </con:settings>
+    <con:definitionCache type="TEXT" rootPart="file:/C:/Users/sachin.hm/Downloads/readyApi-import-test.yaml">
+      <con:part>
+        <con:url>file:/C:/Users/sachin.hm/Downloads/readyApi-import-test.yaml</con:url>
+        <con:content>asyncapi: '2.0.0'
+info:
+  title: readyAPI-import-test
+  version: '1.0.0'
+  description: Example spec to test import into ReadyAPI
+
+channels:
+  queue-one:
+    subscribe:
+      message:
+        contentType: application/json
+        payload:
+          $ref: '#/components/schemas/type1'
+
+  topic-two:
+    publish:
+      message:
+        contentType: application/json
+        payload:
+          $ref: '#/components/schemas/type2'
+
+components:
+  schemas:
+    type1:
+      type: object
+      properties:
+        channel:
+          type: string
+        data:
+          type: object
+          properties:
+            a:
+              type: string
+            b:
+              type: string
+            c:
+              type: number
+        dataVersion:
+          type: number
+          enum: [1]
+      examples:
+        - id: "9629c60d-16dc-405a-85a9-25ebf6163706"
+          eventType: "eventOne"
+          timestamp: "2024-10-03T09:00:00.000000Z"
+          channel: "queue-one"
+          subject: "Type1"
+          publisher: "a-publisher"
+          correlationId: "8031fae3-f982-46b8-a85d-87d900c4cb15"
+          data:
+            a: "abcdef"
+            b: "ghijkl"
+            c: 1
+          dataVersion: 1
+          metadataVersion: 1
+
+    type2:
+      type: object
+      properties:
+        topic:
+          type: string
+        data:
+          type: object
+          properties:
+            d:
+              type: string
+            e:
+              type: string
+            f:
+              type: number
+        dataVersion:
+          type: number
+          enum: [2]
+      examples:
+        - id: "9629c60d-16dc-405a-85a9-25ebf6163706"
+          eventType: "eventOne"
+          timestamp: "2024-10-03T09:00:00.000000Z"
+          channel: "queue-one"
+          subject: "Type1"
+          publisher: "a-publisher"
+          correlationId: "8031fae3-f982-46b8-a85d-87d900c4cb15"
+          data:
+            d: "abcdef"
+            e: "ghijkl"
+            f: 1
+          dataVersion: 2
+          metadataVersion: 1</con:content>
+        <con:type>https://www.asyncapi.com/docs/specifications/2.0.0</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints/>
+    
+    
+  </con:interface>

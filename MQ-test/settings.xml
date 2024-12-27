@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="11159dde-9efc-43a8-85f2-e23960b14d1a" name="MQ-test" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings id="7944e52f-d96d-45a9-b10f-9403c4d2ffb7">
+      <con:setting id="11159dde-9efc-43a8-85f2-e23960b14d1afileName">MQ-test</con:setting>
+    </con:settings>
+    <con:runType>SEQUENTIAL</con:runType>
+    
+    
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>

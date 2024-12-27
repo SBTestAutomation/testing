@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:channel name="topic-two" id="eaf4b865-4cdb-40b7-abe3-db4e415ddcbd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="094f284c-67c0-433d-8285-30b0330a2bba">
+        <con:setting id="eaf4b865-4cdb-40b7-abe3-db4e415ddcbdfileName">topic-two</con:setting>
+      </con:settings>
+      <con:publishOperation name="Publish" id="0a986596-c735-4158-89cd-e42876942c4f">
+        <con:settings/>
+      </con:publishOperation>
+    </con:channel>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="fdda3f40-a6e2-4f2d-8e4f-cc34a5536be5" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="SQL_SP_Test" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="8ffd8851-f17a-4b12-9d24-bb192d7d81d4">
+        <con:setting id="fdda3f40-a6e2-4f2d-8e4f-cc34a5536be5fileName">SQL_SP_Test</con:setting>
+      </con:settings>
+      <con:testStep type="jdbc" name="JDBC oracle" id="d974ad61-0aab-4883-a264-ecda72b8cef9">
+        <con:settings>
+          <con:setting id="prettyPrintResponse">true</con:setting>
+        </con:settings>
+        <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dbConnectionName>oraclecc</con:dbConnectionName>
+          <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
+          <con:connectionString>jdbc:oracle:thin:system/PASS_VALUE@NLB-For-Oracle-OCI-Test-5cda5c37fdea5a00.elb.eu-central-1.amazonaws.com:1521:ecarocdb</con:connectionString>
+          <con:password/>
+          <con:connectionProperties>
+            
+            
+          <con:property><con:name>user</con:name><con:value>system</con:value></con:property><con:property><con:name>password</con:name><con:value>Sachdd</con:value></con:property></con:connectionProperties>
+          <con:query>findMax(2,3,?)</con:query>
+          <con:storedProcedure>true</con:storedProcedure>
+          <con:properties>
+            <con:property>
+              <con:name>first_val</con:name>
+              <con:value>4</con:value>
+            </con:property>
+            <con:property>
+              <con:name>second</con:name>
+              <con:value>5</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="jdbc" name="JDBC_SP_Test" id="ede4036d-6329-4681-99d0-cbcb8b59aafb">
+        <con:settings>
+          <con:setting id="prettyPrintResponse">true</con:setting>
+        </con:settings>
+        <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dbConnectionName>TestDB</con:dbConnectionName>
+          <con:driver>com.mysql.jdbc.Driver</con:driver>
+          <con:connectionString>jdbc:mysql://127.0.0.1:3306/sys?user=root&amp;password=PASS_VALUE</con:connectionString>
+          <con:password>Sachin@123</con:password>
+          <con:connectionProperties/>
+          <con:query>GetMaxValue(10,20,?)</con:query>
+          <con:storedProcedure>true</con:storedProcedure>
+          <con:properties/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="jdbc" name="JDBC Request" id="d999c5ba-f09a-4b20-a9f5-274fb50a4088">
+        <con:settings>
+          <con:setting id="prettyPrintResponse">true</con:setting>
+        </con:settings>
+        <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dbConnectionName>MYSQL</con:dbConnectionName>
+          <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
+          <con:connectionString>jdbc:oracle:thin:system/PASS_VALUE@NLB-For-Oracle-OCI-Test-5cda5c37fdea5a00.elb.eu-central-1.amazonaws.com:1521:ecaroc.private.ecardev.oraclevcn.com</con:connectionString>
+          <con:password>etrddu</con:password>
+          <con:connectionProperties/>
+          <con:query>doubleValue(2,3,?)</con:query>
+          <con:storedProcedure>true</con:storedProcedure>
+          <con:properties/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="Data Source" id="71336cd9-c43f-471a-8e50-1af59ea6947e">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="JDBC">
+            <con:configuration><driver>oracle.jdbc.driver.OracleDriver</driver><connstr>jdbc:oracle:thin:system/PASS_VALUE@NLB-For-Oracle-OCI-Test-5cda5c37fdea5a00.elb.eu-central-1.amazonaws.com:1521:ecaroc.private.ecardev.oraclevcn.com</connstr><pass>etrddu</pass><Connection>MYSQL( Default environment )</Connection><query/><fetchSize>1</fetchSize><stored-procedure>false</stored-procedure></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:startRow/>
+          <con:endRow/>
+          <con:recordsPerIteration>1</con:recordsPerIteration>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:trimValues>false</con:trimValues>
+          <con:entitizeValues>false</con:entitizeValues>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:expandProperties>false</con:expandProperties>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop" id="4777574c-2aa6-427e-a2bc-411a400d5355">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep/>
+          <targetStep/>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="0c96cfe8-e212-4bc2-be13-6df7a2f1bc8e">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>

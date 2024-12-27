@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="e584aa4e-011b-46a0-895b-ca8e650832b7" name="JDBC_SP_Test" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings id="ab8fc2db-d6b8-4b24-853f-2ce60077d44f">
+      <con:setting id="e584aa4e-011b-46a0-895b-ca8e650832b7fileName">JDBC_SP_Test</con:setting>
+    </con:settings>
+    <con:runType>SEQUENTIAL</con:runType>
+    
+    <con:properties/>
+    <con:reportParameters/>
+    <con:environmentSpec>
+      <con:entry environmentId="0c96cfe8-e212-4bc2-be13-6df7a2f1bc8e">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:testSuite>

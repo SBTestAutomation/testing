@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a16edea3-4bb8-48a9-9e18-95fc7e75a418" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Mq-test" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="a899a3bd-8ab4-463f-b2cf-10501c4b1789">
+        <con:setting id="a16edea3-4bb8-48a9-9e18-95fc7e75a418fileName">Mq-test</con:setting>
+      </con:settings>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customMockService id="a99de1a2-210f-4ae0-ab2c-0451de12a3cf" name="JMS IBM MQ" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings id="ee975e85-6ce1-4ab3-9adc-83dcd3d6af68">
+      <con:setting id="a99de1a2-210f-4ae0-ab2c-0451de12a3cffileName">JMS-IBM-MQ</con:setting>
+    </con:settings>
+    <con:properties>
+      <con:property>
+        <con:name>jmsMockService.ttlHopLimit</con:name>
+        <con:value>10</con:value>
+      </con:property>
+    </con:properties>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>1</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>1</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    
+    <con:virtProperties>
+      <con:property>
+        <con:name>mockServiceType</con:name>
+        <con:value>JMS</con:value>
+      </con:property>
+    </con:virtProperties>
+  </con:customMockService>

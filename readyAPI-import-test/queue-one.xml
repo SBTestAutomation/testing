@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:channel name="queue-one" id="9974a90c-22c6-426c-8a88-a67c76b85fe1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="6e6c96c9-1b4b-4e05-bff1-f7acea4d9c46">
+        <con:setting id="9974a90c-22c6-426c-8a88-a67c76b85fe1fileName">queue-one</con:setting>
+      </con:settings>
+      <con:subscribeOperation name="Subscribe" id="24b2f1cb-6750-4cfc-b30d-8d0839bf88e1">
+        <con:settings/>
+      </con:subscribeOperation>
+    </con:channel>
