@@ -101,4 +101,5 @@
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>
+  <con:reporting/>
 </con:testCase>
