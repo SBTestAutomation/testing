@@ -22,7 +22,7 @@
         </con:property>
         <con:property>
           <con:name>second</con:name>
-          <con:value>5</con:value>
+          <con:value>8</con:value>
         </con:property>
       </con:properties>
     </con:config>
@@ -101,5 +101,4 @@
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>
-  <con:reporting/>
 </con:testCase>
