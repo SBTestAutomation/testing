@@ -44,7 +44,7 @@
           <con:value/>
         </con:property>
       </con:operationProperties>
-      <con:customResponse name="Response 1" id="a9d2cd72-0b1a-4253-a57f-611e4c305bd8">
+      <con:customResponse id="a9d2cd72-0b1a-4253-a57f-611e4c305bd8" name="Response 1">
         <con:settings/>
         <con:script/>
         <con:responseProperties>
@@ -58,7 +58,7 @@
           </con:property>
           <con:property>
             <con:name>ExtraJndiProperties</con:name>
-            <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
           </con:property>
           <con:property>
             <con:name>BindableJmsMockResponse.manualDestination</con:name>

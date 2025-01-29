@@ -69,8 +69,8 @@
           <pass>etrddu</pass>
           <Connection>MYSQL( Default environment )</Connection>
           <query/>
+          <fetchSize>1</fetchSize>
           <stored-procedure>false</stored-procedure>
-		  <fetchSize>1</fetchSize>
         </con:configuration>
       </con:dataSource>
       <con:shared>true</con:shared>
@@ -79,9 +79,9 @@
       <con:endRow/>
       <con:recordsPerIteration>1</con:recordsPerIteration>
       <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
       <con:trimValues>false</con:trimValues>
       <con:entitizeValues>false</con:entitizeValues>
-	  <con:restartOnRun>true</con:restartOnRun>
       <con:expandProperties>false</con:expandProperties>
       <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
     </con:config>
