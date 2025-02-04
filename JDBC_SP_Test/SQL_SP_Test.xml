@@ -18,7 +18,7 @@
       <con:properties>
         <con:property>
           <con:name>first_val</con:name>
-          <con:value>5</con:value>
+          <con:value>57</con:value>
         </con:property>
         <con:property>
           <con:name>second</con:name>
@@ -32,10 +32,10 @@
       <con:setting id="prettyPrintResponse">true</con:setting>
     </con:settings>
     <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="false">
-      <con:dbConnectionName>TestDB</con:dbConnectionName>
-      <con:driver>com.mysql.jdbc.Driver</con:driver>
-      <con:connectionString>jdbc:mysql://127.0.0.1:3306/sys?user=root&amp;password=PASS_VALUE</con:connectionString>
-      <con:password>Sachin@123</con:password>
+      <con:dbConnectionName>MYSQL</con:dbConnectionName>
+      <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
+      <con:connectionString>jdbc:oracle:thin:system/PASS_VALUE@NLB-For-Oracle-OCI-Test-5cda5c37fdea5a00.elb.eu-central-1.amazonaws.com:1521:ecaroc.private.ecardev.oraclevcn.com</con:connectionString>
+      <con:password>etrddu</con:password>
       <con:connectionProperties/>
       <con:query>GetMaxValue(10,20,?)</con:query>
       <con:storedProcedure>true</con:storedProcedure>
@@ -48,9 +48,9 @@
     </con:settings>
     <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="false">
       <con:dbConnectionName>MYSQL</con:dbConnectionName>
-      <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
       <con:connectionString>jdbc:oracle:thin:system/PASS_VALUE@NLB-For-Oracle-OCI-Test-5cda5c37fdea5a00.elb.eu-central-1.amazonaws.com:1521:ecaroc.private.ecardev.oraclevcn.com</con:connectionString>
       <con:password>etrddu</con:password>
+      <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
       <con:connectionProperties/>
       <con:query>doubleValue(2,3,?)</con:query>
       <con:storedProcedure>true</con:storedProcedure>
@@ -94,6 +94,7 @@
       <discardResults>true</discardResults>
     </con:config>
   </con:testStep>
+  <con:reporting/>
   <con:properties/>
   <con:reportParameters/>
   <con:environmentSpec>

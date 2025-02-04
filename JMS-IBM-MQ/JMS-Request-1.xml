@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:customOperation id="5c0db292-91f3-4a50-8552-707b1e028e7d" name="JMS Request 1" xmlns:con="http://eviware.com/soapui/config">
-      <con:settings id="3e3e44e3-6645-4973-9a4f-8120776f7add">
-        <con:setting id="5c0db292-91f3-4a50-8552-707b1e028e7dfileName">JMS-Request-1</con:setting>
-      </con:settings>
-      <con:defaultResponse>Response 1</con:defaultResponse>
-      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
-      <con:dispatchConfig/>
-      <con:operationProperties>
-        <con:property>
-          <con:name>JmsServer</con:name>
-          <con:value>IBM-MQ</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ConnectorLabel</con:name>
-          <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        </con:property>
-        <con:property>
-          <con:name>InitialContextFactory</con:name>
-          <con:value>com.sun.jndi.fscontext.RefFSContextFactory</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ProviderUrl</con:name>
-          <con:value>file:/C:/Users/sachin.hm/mq-jms/</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ConnectionFactory</con:name>
-          <con:value>readycf</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ReceiveDestinationJndiName</con:name>
-          <con:value>rd</con:value>
-        </con:property>
-        <con:property>
-          <con:name>SendDestinationJndiName</con:name>
-          <con:value/>
-        </con:property>
-        <con:property>
-          <con:name>UserName</con:name>
-          <con:value/>
-        </con:property>
-        <con:property>
-          <con:name>Password</con:name>
-          <con:value/>
-        </con:property>
-      </con:operationProperties>
-      <con:customResponse id="a9d2cd72-0b1a-4253-a57f-611e4c305bd8" name="Response 1">
-        <con:settings/>
-        <con:script/>
-        <con:responseProperties>
-          <con:property>
-            <con:name>BindableJmsMockResponse.useIncomingReplyTo</con:name>
-            <con:value>true</con:value>
-          </con:property>
-          <con:property>
-            <con:name>JmsServer</con:name>
-            <con:value>IBM-MQ</con:value>
-          </con:property>
-          <con:property>
-            <con:name>ExtraJndiProperties</con:name>
-            <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
-          </con:property>
-          <con:property>
-            <con:name>BindableJmsMockResponse.manualDestination</con:name>
-            <con:value>#ManualJmsConfiguration properties&#13;
-&#13;
-receiveDestinationJndiName=rd&#13;
-password=&#13;
-initialContextFactoryClass=com.sun.jndi.fscontext.RefFSContextFactory&#13;
-userName=&#13;
-connectionFactoryJndiName=readycf&#13;
-providerUrl=file\:/C\:/Users/sachin.hm/mq-jms/&#13;
-sendDestinationJndiName=&#13;
+<con:customOperation xmlns:con="http://eviware.com/soapui/config" id="5c0db292-91f3-4a50-8552-707b1e028e7d" name="JMS Request 1">
+  <con:settings id="3e3e44e3-6645-4973-9a4f-8120776f7add">
+    <con:setting id="5c0db292-91f3-4a50-8552-707b1e028e7dfileName">JMS-Request-1</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:operationProperties>
+    <con:property>
+      <con:name>JmsServer</con:name>
+      <con:value>IBM-MQ</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConnectorLabel</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </con:property>
+    <con:property>
+      <con:name>InitialContextFactory</con:name>
+      <con:value>com.sun.jndi.fscontext.RefFSContextFactory</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ProviderUrl</con:name>
+      <con:value>file:/C:/Users/sachin.hm/mq-jms/</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConnectionFactory</con:name>
+      <con:value>readycf</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ReceiveDestinationJndiName</con:name>
+      <con:value>rd</con:value>
+    </con:property>
+    <con:property>
+      <con:name>SendDestinationJndiName</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>UserName</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>Password</con:name>
+      <con:value/>
+    </con:property>
+  </con:operationProperties>
+  <con:customResponse id="a9d2cd72-0b1a-4253-a57f-611e4c305bd8" name="Response 1">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties>
+      <con:property>
+        <con:name>BindableJmsMockResponse.useIncomingReplyTo</con:name>
+        <con:value>true</con:value>
+      </con:property>
+      <con:property>
+        <con:name>JmsServer</con:name>
+        <con:value>IBM-MQ</con:value>
+      </con:property>
+      <con:property>
+        <con:name>ExtraJndiProperties</con:name>
+        <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.manualDestination</con:name>
+        <con:value>#ManualJmsConfiguration properties
+
+receiveDestinationJndiName=rd
+password=
+initialContextFactoryClass=com.sun.jndi.fscontext.RefFSContextFactory
+userName=
+connectionFactoryJndiName=readycf
+providerUrl=file\:/C\:/Users/sachin.hm/mq-jms/
+sendDestinationJndiName=
 </con:value>
-          </con:property>
-        </con:responseProperties>
-      </con:customResponse>
-    </con:customOperation>
+      </con:property>
+    </con:responseProperties>
+  </con:customResponse>
+</con:customOperation>
